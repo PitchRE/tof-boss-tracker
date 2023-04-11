@@ -574,94 +574,94 @@ module.exports = {
                   label: `Channel 3`,
                   value: `haboelaChannel3`,
                 },
-                {
-                  label: `Channel 4`,
-                  value: `haboelaChannel4`,
-                },
-                {
-                  label: `Channel 5`,
-                  value: `haboelaChannel5`,
-                },
-                {
-                  label: `Channel 6`,
-                  value: `haboelaChannel6`,
-                },
-                {
-                  label: `Channel 7`,
-                  value: `haboelaChannel7`,
-                },
-                {
-                  label: `Channel 8`,
-                  value: `haboelaChannel8`,
-                },
-                {
-                  label: `Channel 9`,
-                  value: `haboelaChannel9`,
-                },
-                {
-                  label: `Channel 10`,
-                  value: `haboelaChannel10`,
-                },
-                {
-                  label: `Channel 11`,
-                  value: `haboelaChannel11`,
-                },
-                {
-                  label: `Channel 12`,
-                  value: `haboelaChannel12`,
-                },
-                {
-                  label: `Channel 13`,
-                  value: `haboelaChannel13`,
-                },
-                {
-                  label: `Channel 14`,
-                  value: `haboelaChannel14`,
-                },
-                {
-                  label: `Channel 15`,
-                  value: `haboelaChannel15`,
-                },
-                {
-                  label: `Channel 16`,
-                  value: `haboelaChannel16`,
-                },
-                {
-                  label: `Channel 17`,
-                  value: `haboelaChannel17`,
-                },
-                {
-                  label: `Channel 18`,
-                  value: `haboelaChannel18`,
-                },
-                {
-                  label: `Channel 19`,
-                  value: `haboelaChannel19`,
-                },
-                {
-                  label: `Channel 20`,
-                  value: `haboelaChannel20`,
-                },
-                {
-                  label: `Channel 21`,
-                  value: `haboelaChannel21`,
-                },
-                {
-                  label: `Channel 22`,
-                  value: `haboelaChannel22`,
-                },
-                {
-                  label: `Channel 23`,
-                  value: `haboelaChannel23`,
-                },
-                {
-                  label: `Channel 24`,
-                  value: `haboelaChannel24`,
-                },
-                {
-                  label: `Channel 25`,
-                  value: `haboelaChannel25`,
-                },
+                // {
+                //   label: `Channel 4`,
+                //   value: `haboelaChannel4`,
+                // },
+                // {
+                //   label: `Channel 5`,
+                //   value: `haboelaChannel5`,
+                // },
+                // {
+                //   label: `Channel 6`,
+                //   value: `haboelaChannel6`,
+                // },
+                // {
+                //   label: `Channel 7`,
+                //   value: `haboelaChannel7`,
+                // },
+                // {
+                //   label: `Channel 8`,
+                //   value: `haboelaChannel8`,
+                // },
+                // {
+                //   label: `Channel 9`,
+                //   value: `haboelaChannel9`,
+                // },
+                // {
+                //   label: `Channel 10`,
+                //   value: `haboelaChannel10`,
+                // },
+                // {
+                //   label: `Channel 11`,
+                //   value: `haboelaChannel11`,
+                // },
+                // {
+                //   label: `Channel 12`,
+                //   value: `haboelaChannel12`,
+                // },
+                // {
+                //   label: `Channel 13`,
+                //   value: `haboelaChannel13`,
+                // },
+                // {
+                //   label: `Channel 14`,
+                //   value: `haboelaChannel14`,
+                // },
+                // {
+                //   label: `Channel 15`,
+                //   value: `haboelaChannel15`,
+                // },
+                // {
+                //   label: `Channel 16`,
+                //   value: `haboelaChannel16`,
+                // },
+                // {
+                //   label: `Channel 17`,
+                //   value: `haboelaChannel17`,
+                // },
+                // {
+                //   label: `Channel 18`,
+                //   value: `haboelaChannel18`,
+                // },
+                // {
+                //   label: `Channel 19`,
+                //   value: `haboelaChannel19`,
+                // },
+                // {
+                //   label: `Channel 20`,
+                //   value: `haboelaChannel20`,
+                // },
+                // {
+                //   label: `Channel 21`,
+                //   value: `haboelaChannel21`,
+                // },
+                // {
+                //   label: `Channel 22`,
+                //   value: `haboelaChannel22`,
+                // },
+                // {
+                //   label: `Channel 23`,
+                //   value: `haboelaChannel23`,
+                // },
+                // {
+                //   label: `Channel 24`,
+                //   value: `haboelaChannel24`,
+                // },
+                // {
+                //   label: `Channel 25`,
+                //   value: `haboelaChannel25`,
+                // },
               ])
           );
           await channel.send({

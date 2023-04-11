@@ -1,3 +1,6 @@
+const moment = require("moment");
+require("dotenv").config();
+
 const {
   EmbedBuilder,
   Events,
@@ -15,12 +18,19 @@ client.on(Events.InteractionCreate, async (interaction) => {
     // Generate a timestamp based on when the user interacted with the menu.
     const timestamp = Date.now();
     // Obtain message ID's for the boss timers. These should be set in advance.
-    const bossTimers = require("../exports/bossMessageID.js");
+
+    let bossTimers;
+    if (process.env.production) {
+      bossTimers = require("../exports/bossMessageID_live.js");
+    } else {
+      bossTimers = require("../exports/bossMessageID.js");
+    }
+
     // Read the value of the menu interaction.
     const selected = interaction.values[0];
     // Cache and set the channel that the interaction came from.
     const channel = client.channels.cache.get(interaction.channelId);
-    // Set the
+    // Set thethe
     let channelNumber = selected.match(/\d+/g);
     // Match the selected value from the menu interaction to a key in '../exports/bossMessageID.js'.
     let bossTimerID = bossTimers.bossTimers.find((r) => r.key === selected) || {
@@ -45,7 +55,7 @@ client.on(Events.InteractionCreate, async (interaction) => {
       // Find and store the second-to-last message in the channel.
       const messageSortedByTime = messages.first(2)[1];
       // Sort and store all of the messages received by last edited.
-      const sortedMessages = messages
+      let sortedMessages = messages
         .sort((a, b) => {
           return b.editedTimestamp - a.editedTimestamp;
         })
@@ -53,17 +63,34 @@ client.on(Events.InteractionCreate, async (interaction) => {
           return {
             content: message.content,
             messageid: message.id,
+            editedTimestamp: message.editedTimestamp,
           };
         });
+
       // Print the content of each message to a single variable. Skip the second-to-last message stored earlier. Also skip any empty messages. This includes pictures and menu select embeds.
-      const reducedMessages = sortedMessages
+      sortedMessages = sortedMessages
         .filter(
           (msg) =>
             msg.content !== "" && msg.messageid !== messageSortedByTime.id
         )
-        .reduce((acc, msg) => {
+        .filter(function (msg) {
+          let edited = moment(msg.editedTimestamp);
+          let now = moment();
+
+          let diff = now.diff(edited, "minutes");
+
+          return diff <= 75;
+        });
+
+      let reducedMessages;
+      if (sortedMessages.length > 0) {
+        reducedMessages = sortedMessages.reduce((acc, msg) => {
           return { content: acc.content + "\n" + msg.content };
         });
+      } else {
+        reducedMessages = { content: "Information is missing." };
+      }
+
       // Post the sorted list in an edit to the second-to-last message in the channel.
       messageSortedByTime.edit(
         `**Sorted by Last Killed:** \n${reducedMessages.content}`
