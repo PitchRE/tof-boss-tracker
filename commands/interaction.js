@@ -356,6 +356,14 @@ module.exports = {
                   label: `Channel 3`,
                   value: `devourerChannel3`,
                 },
+                {
+                  label: `Channel 4`,
+                  value: `devourerChannel4`,
+                },
+                {
+                  label: `Channel 5`,
+                  value: `devourerChannel5`,
+                },
               ])
           );
           await channel.send({
@@ -380,6 +388,14 @@ module.exports = {
                 {
                   label: `Channel 3`,
                   value: `dragonChannel3`,
+                },
+                {
+                  label: `Channel 4`,
+                  value: `dragonChannel4`,
+                },
+                {
+                  label: `Channel 5`,
+                  value: `dragonChannel5`,
                 },
               ])
           );

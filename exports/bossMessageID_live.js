@@ -53,6 +53,8 @@ exports.bossTimers = [
   { key: `devourerChannel1`, messageID: `1095326357958971473` },
   { key: `devourerChannel2`, messageID: `1095326367589081120` },
   { key: `devourerChannel3`, messageID: `1095326375579226153` },
+  { key: `devourerChannel4`, messageID: `1095703822745223178` },
+  { key: `devourerChannel5`, messageID: `1095703834040483870` },
 
   // Eva
   { key: `evaChannel1`, messageID: `1095326739145695272` },
@@ -137,6 +139,8 @@ exports.bossTimers = [
   { key: `dragonChannel1`, messageID: `1095326076693127269` },
   { key: `dragonChannel2`, messageID: `1095326089569652817` },
   { key: `dragonChannel3`, messageID: `1095326111270961202` },
+  { key: `dragonChannel4`, messageID: `1095703629987586140` },
+  { key: `dragonChannel5`, messageID: `1095703653110788097` },
 
   // Lucia
   { key: `luciaChannel1`, messageID: `1095329497642979409` },
