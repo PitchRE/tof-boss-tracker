@@ -33,6 +33,7 @@ module.exports = {
           { name: "Eva", value: "evaMenu" },
           { name: "Frost Bot", value: "frostbotMenu" },
           { name: "Haboela", value: "haboelaMenu" },
+          { name: "Nakya", value: "nakyaMenu" },
           { name: "Harrah", value: "harrahMenu" },
           { name: "Lucia", value: "luciaMenu" },
           { name: "Magma", value: "magmaMenu" },
@@ -684,6 +685,121 @@ module.exports = {
             components: [lineCooldownButton, haboelaSelector],
           });
         }
+
+        if (bossMenu === "nakyaMenu") {
+          // Build select menus.
+          const nakyaSelector = new ActionRowBuilder().addComponents(
+            new StringSelectMenuBuilder()
+              .setCustomId("nakyaTimestamp")
+              .setPlaceholder("Mark Defeated")
+              .addOptions([
+                {
+                  label: `Channel 1`,
+                  value: `nakyaChannel1`,
+                },
+                {
+                  label: `Channel 2`,
+                  value: `nakyaChannel2`,
+                },
+                {
+                  label: `Channel 3`,
+                  value: `nakyaChannel3`,
+                },
+                {
+                  label: `Channel 4`,
+                  value: `nakyaChannel4`,
+                },
+                {
+                  label: `Channel 5`,
+                  value: `nakyaChannel5`,
+                },
+                {
+                  label: `Channel 6`,
+                  value: `nakyaChannel6`,
+                },
+                {
+                  label: `Channel 7`,
+                  value: `nakyaChannel7`,
+                },
+                {
+                  label: `Channel 8`,
+                  value: `nakyaChannel8`,
+                },
+                {
+                  label: `Channel 9`,
+                  value: `nakyaChannel9`,
+                },
+                {
+                  label: `Channel 10`,
+                  value: `nakyaChannel10`,
+                },
+                {
+                  label: `Channel 11`,
+                  value: `nakyaChannel11`,
+                },
+                {
+                  label: `Channel 12`,
+                  value: `nakyaChannel12`,
+                },
+                {
+                  label: `Channel 13`,
+                  value: `nakyaChannel13`,
+                },
+                {
+                  label: `Channel 14`,
+                  value: `nakyaChannel14`,
+                },
+                {
+                  label: `Channel 15`,
+                  value: `nakyaChannel15`,
+                },
+                {
+                  label: `Channel 16`,
+                  value: `nakyaChannel16`,
+                },
+                {
+                  label: `Channel 17`,
+                  value: `nakyaChannel17`,
+                },
+                {
+                  label: `Channel 18`,
+                  value: `nakyaChannel18`,
+                },
+                {
+                  label: `Channel 19`,
+                  value: `nakyaChannel19`,
+                },
+                {
+                  label: `Channel 20`,
+                  value: `nakyaChannel20`,
+                },
+                {
+                  label: `Channel 21`,
+                  value: `nakyaChannel21`,
+                },
+                {
+                  label: `Channel 22`,
+                  value: `nakyaChannel22`,
+                },
+                {
+                  label: `Channel 23`,
+                  value: `nakyaChannel23`,
+                },
+                {
+                  label: `Channel 24`,
+                  value: `nakyaChannel24`,
+                },
+                {
+                  label: `Channel 25`,
+                  value: `nakyaChannel25`,
+                },
+              ])
+          );
+          await channel.send({
+            components: [lineCooldownButton, nakyaSelector],
+          });
+        }
+
         if (bossMenu === "harrahMenu") {
           // Build select menus.
           const harrahSelector = new ActionRowBuilder().addComponents(
