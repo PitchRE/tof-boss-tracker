@@ -1013,6 +1013,66 @@ module.exports = {
                   label: `Channel 10`,
                   value: `magmaChannel10`,
                 },
+                {
+                  label: `Channel 11`,
+                  value: `magmaChannel11`,
+                },
+                {
+                  label: `Channel 12`,
+                  value: `magmaChannel12`,
+                },
+                {
+                  label: `Channel 13`,
+                  value: `magmaChannel13`,
+                },
+                {
+                  label: `Channel 14`,
+                  value: `magmaChannel14`,
+                },
+                {
+                  label: `Channel 15`,
+                  value: `magmaChannel15`,
+                },
+                {
+                  label: `Channel 16`,
+                  value: `magmaChannel16`,
+                },
+                {
+                  label: `Channel 17`,
+                  value: `magmaChannel17`,
+                },
+                {
+                  label: `Channel 18`,
+                  value: `magmaChannel18`,
+                },
+                {
+                  label: `Channel 19`,
+                  value: `magmaChannel19`,
+                },
+                {
+                  label: `Channel 20`,
+                  value: `magmaChannel20`,
+                },
+                {
+                  label: `Channel 21`,
+                  value: `magmaChannel21`,
+                },
+                {
+                  label: `Channel 22`,
+                  value: `magmaChannel22`,
+                },
+                {
+                  label: `Channel 23`,
+                  value: `magmaChannel23`,
+                },
+                {
+                  label: `Channel 24`,
+                  value: `magmaChannel24`,
+                },
+                {
+                  label: `Channel 25`,
+                  value: `magmaChannel25`,
+                },
               ])
           );
           await channel.send({
