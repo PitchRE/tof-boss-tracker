@@ -95,7 +95,7 @@ client.on(Events.InteractionCreate, async (interaction) => {
       messageSortedByTime.edit(
         `**Sorted by Last Killed:** \n${reducedMessages.content}`
       );
-    }, 1000 * 1);
+    }, 2500 * 1);
     // If there is a broken menu, DM the BOT maintainer.
     if (bossTimerID.key === "error") {
       // Send a DM to the bot maintainer.
