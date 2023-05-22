@@ -38,16 +38,21 @@ client.on(Events.InteractionCreate, async (interaction) => {
       value: `Something went wrong or this item is not yet finished. The BOT author has been notified.`,
     };
     // Fetch the message by the ID matched from the previous operation.
-    await channel.messages.fetch(bossTimerID.messageID).then((message) => {
-      // Edit the message with the channel selected, relative and absolute timestamp (timezone-agnostic), and the user that selected the interaction.
-      message.edit(
-        `Channel ${channelNumber}: <t:${Math.floor(
-          timestamp / 1000
-        )}:t>, <t:${Math.floor(timestamp / 1000)}:R> (<@!${
-          interaction.user.id
-        }>).`
-      );
-    });
+    await channel.messages
+      .fetch(bossTimerID.messageID)
+      .then(async (message) => {
+        console.log(channelNumber);
+        // Edit the message with the channel selected, relative and absolute timestamp (timezone-agnostic), and the user that selected the interaction.
+        message
+          .edit(
+            `Channel ${channelNumber}: <t:${Math.floor(
+              timestamp / 1000
+            )}:t>, <t:${Math.floor(timestamp / 1000)}:R> (<@!${
+              interaction.user.id
+            }>).`
+          )
+          .catch((error) => console.log(error));
+      });
     // Add a one second delay to be sure Discord has marked the message as edited before we fetch the message list.
     setTimeout(async function () {
       // Fetch the message list from the channel the interaction came from.
@@ -92,10 +97,10 @@ client.on(Events.InteractionCreate, async (interaction) => {
       }
 
       // Post the sorted list in an edit to the second-to-last message in the channel.
-      messageSortedByTime.edit(
-        `**Sorted by Last Killed:** \n${reducedMessages.content}`
-      );
-    }, 2500 * 1);
+      messageSortedByTime
+        .edit(`**Sorted by Last Killed:** \n${reducedMessages.content}`)
+        .catch((error) => console.log(error));
+    }, 1000 * 1);
     // If there is a broken menu, DM the BOT maintainer.
     if (bossTimerID.key === "error") {
       // Send a DM to the bot maintainer.
