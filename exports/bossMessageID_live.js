@@ -275,7 +275,7 @@ exports.bossTimers = [
   { key: `rudolphChannel22`, messageID: `1114648009779724319` },
   { key: `rudolphChannel23`, messageID: `1114648019711840336` },
   { key: `rudolphChannel24`, messageID: `1114648030600249404` },
-  { key: `rudolphChannel25`, messageID: `1114648040859500626` },
+  { key: `rudolphChannel25`, messageID: `1114649464129462362` },
 
 
   // Scylla
