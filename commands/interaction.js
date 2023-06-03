@@ -1240,6 +1240,54 @@ module.exports = {
                   label: `Channel 10`,
                   value: `rudolphChannel10`,
                 },
+                {
+                  label: `Channel 11`,
+                  value: `rudolphChannel11`,
+                },
+                {
+                  label: `Channel 12`,
+                  value: `rudolphChannel12`,
+                },
+                {
+                  label: `Channel 13`,
+                  value: `rudolphChannel13`,
+                }, {
+                  label: `Channel 14`,
+                  value: `rudolphChannel14`,
+                }, {
+                  label: `Channel 15`,
+                  value: `rudolphChannel15`,
+                }, {
+                  label: `Channel 16`,
+                  value: `rudolphChannel16`,
+                }, {
+                  label: `Channel 17`,
+                  value: `rudolphChannel17`,
+                }, {
+                  label: `Channel 18`,
+                  value: `rudolphChannel18`,
+                }, {
+                  label: `Channel 19`,
+                  value: `rudolphChannel19`,
+                }, {
+                  label: `Channel 20`,
+                  value: `rudolphChannel20`,
+                }, {
+                  label: `Channel 21`,
+                  value: `rudolphChannel21`,
+                }, {
+                  label: `Channel 22`,
+                  value: `rudolphChannel22`,
+                }, {
+                  label: `Channel 23`,
+                  value: `rudolphChannel23`,
+                }, {
+                  label: `Channel 24`,
+                  value: `rudolphChannel24`,
+                }, {
+                  label: `Channel 25`,
+                  value: `rudolphChannel25`,
+                },
               ])
           );
           await channel.send({
